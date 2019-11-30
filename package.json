@@ -1,0 +1,27 @@
+{
+  "name": "gitlab-wh-jira-server",
+  "version": "0.0.1",
+  "description": "WebHook server for GitLab integration with Jira Cloud",
+  "main": "index.js",
+  "author": {
+    "email": "i@yukio.ru",
+    "name": "Andrey Kondalov",
+    "url": "https://yukio.ru"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "3.7.2",
+    "body-parser": "1.19.0",
+    "config": "3.2.4",
+    "express": "4.17.1",
+    "jira-connector": "2.16.1",
+    "lodash.kebabcase": "4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.1"
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  }
+}
