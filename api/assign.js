@@ -2,7 +2,6 @@ const prepareTransitions = require('../utils/prepareTransitions');
 
 module.exports = async function assign(instance, data) {
   const { issue, user } = instance;
-  console.log(data.params.assign);
   try {
     const res = await user.search({
       query: data.params.assign,

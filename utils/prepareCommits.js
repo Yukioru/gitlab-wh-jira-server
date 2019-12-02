@@ -4,6 +4,7 @@ const { KEY_RX, TAGS_RX, PARAM_RX, STATUSES } = constants;
 module.exports = function prepareCommits(arr) {
   return arr.reverse().map((commit) => {
     const msg = commit.message;
+    console.log(`COMMIT: <${commit.author.name}> (${commit.timestamp}) ${msg}`);
     if (KEY_RX.test(msg)) {
       const [, issueKey] = KEY_RX.exec(msg);
       const others = msg.replace(issueKey, '').trim();

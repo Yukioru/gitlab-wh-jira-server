@@ -1,6 +1,5 @@
 module.exports = async function assign(instance, data) {
   const { issue } = instance;
-  console.log(data.params.time);
   try {
     await issue.addWorkLog({
       issueKey: data.issueKey,
